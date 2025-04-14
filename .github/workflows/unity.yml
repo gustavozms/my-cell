@@ -7,9 +7,9 @@ on:
   pull_request:
     paths:
       - "unity/**"
-  # workflow_dispatch:
-  #   paths:
-  #     - "unity/**"
+  workflow_dispatch:
+    # paths:
+    #   - "unity/**"
 
 jobs:
   tests:
@@ -19,7 +19,8 @@ jobs:
       fail-fast: false
       matrix:
         projectPath:
-          - unity/UNITY_PROJECT_DIRECTORY_NAME
+          - unity/MyCell
+
         testMode:
           - playmode
           - editmode
@@ -59,7 +60,7 @@ jobs:
       fail-fast: false
       matrix:
         projectPath:
-          - unity/UNITY_PROJECT_DIRECTORY_NAME
+          - unity/MyCell
         targetPlatform:
           - WebGL
 
