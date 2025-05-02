@@ -62,8 +62,8 @@ public class Cell : MonoBehaviour
             SpringJoint2D joint = nodeA.AddComponent<SpringJoint2D>();
             joint.connectedBody = nodeB.GetComponent<Rigidbody2D>();
 
-            joint.anchor = new Vector2(0, 0.5f);
-            joint.connectedAnchor = new Vector2(0, -0.5f);
+            joint.anchor = new Vector2(0, 0.2f);
+            joint.connectedAnchor = new Vector2(0, -0.2f);
 
             joint.dampingRatio = 0f;
             joint.frequency = perimeterJointFrequency;
