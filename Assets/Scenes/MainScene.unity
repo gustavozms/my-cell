@@ -682,7 +682,6 @@ GameObject:
   m_Component:
   - component: {fileID: 526469262}
   - component: {fileID: 526469261}
-  - component: {fileID: 526469260}
   - component: {fileID: 526469259}
   m_Layer: 3
   m_Name: Effect Camera
@@ -735,14 +734,6 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!81 &526469260
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 526469258}
-  m_Enabled: 1
 --- !u!20 &526469261
 Camera:
   m_ObjectHideFlags: 0
@@ -1086,7 +1077,7 @@ GameObject:
   m_Component:
   - component: {fileID: 832575519}
   - component: {fileID: 832575518}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Global Volume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
