@@ -1,19 +1,16 @@
 using System;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.RenderGraphModule;
 using UnityEngine.Rendering.RenderGraphModule.Util;
 
-public class BlurRendererFeature : ScriptableRendererFeature
+public class BlurEffectRendererFeature : ScriptableRendererFeature
 {
     [SerializeField] private BlurSettings settings;
     [SerializeField] private Shader shader;
     private Material material;
     private BlurRenderPass blurRenderPass;
-
-
 
     public class BlurRenderPass : ScriptableRenderPass
     {
@@ -89,7 +86,6 @@ public class BlurRendererFeature : ScriptableRendererFeature
             renderGraph.AddBlitPass(paraHorizontal, k_HorizontalPassName);
         }
     }
-
 
     public override void Create()
     {
